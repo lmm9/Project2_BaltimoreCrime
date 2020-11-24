@@ -18,7 +18,7 @@ L.tileLayer("https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_toke
 var crimeData = "static/data/crimedata_final.csv"
 
 //Read the csv and print it to the console
-d3.csv(crimeData, function(response) {
+var baltCrime = d3.csv(crimeData, function(response) {
   console.log(response);
 
 //Create an empty array to create the heat layer
